@@ -1,59 +1,44 @@
-## Introduction
+The micro:bit V2 has a microphone input to sense sound levels.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+## Display the sound level
 
-### What you will make
+In the Sound meter project, you learned how to plot a bar graph of the sound level.
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_6ksXpsPViAWd
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+In this code:
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+A loop is called every half second (500 ms).
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+- You can find the `every`{:class='microbitloops'} block in the `Loops`{:class='microbitloops'} menu in your Toolbox.
 
-+ A computer or tablet capable of running Scratch 3
+The value of `sound level`{:class='microbitinput'} is used as the value to display on the LEDs.
 
-### Software
+- You can find the `sound level`{:class='microbitinput'} block in the `Input`{:class='microbitinput'} menu in your Toolbox.
+- You can find the `plot bar graph`{:class='microbitled'} block in the `Led`{:class='microbitled'} menu in your Toolbox.
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
+## Use the sound level to trigger an action.
 
-### Downloads
+You can use the value of `sound level`{:class='microbitinput'} in a comparison block to trigger an action.
 
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iwxY77TVqLhP
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
---- /collapse ---
+In this code:
 
---- collapse ---
----
-title: What you will learn
----
+A loop is called every half second (500 ms).
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+- You can find the `every`{:class='microbitloops'} block in the `Loops`{:class='microbitloops'} menu in your Toolbox.
 
---- /collapse ---
+There is a comparison to check if the `sound level`{:class='microbitinput'} is more than a value of 200.
 
---- collapse ---
----
-title: Additional information for educators
----
+- You can find the `sound level`{:class='microbitinput'} block in the `Input`{:class='microbitinput'} menu in your Toolbox.
+- You can find the `if`{:class='microbitlogic'} block and the `>` {:class='microbitlogic'} block in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
+If the result of the comparison is True, then a sad face icon is shown. If it is False, then a smiley face icon is shown.
+- You can find `show icon`{:class='microbitbasic'} blocks in the `Basic`{:class='microbitbasic'} menu in your Toolbox.
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+Slide the microphone level up to 200 to trigger the LEDs to change.
 
---- /collapse ---
+<div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---run?id=_Ccg0vpbm2PdF" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
