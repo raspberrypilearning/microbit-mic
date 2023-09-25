@@ -34,7 +34,7 @@ A loop is called every half second (500 ms).
 There is a comparison to check if the `sound level`{:class='microbitinput'} is more than a value of 200.
 
 - You can find the `sound level`{:class='microbitinput'} block in the `Input`{:class='microbitinput'} menu in your Toolbox.
-- You can find the `if`{:class='microbitlogic'} block and the `>` {:class='microbitlogic'} block in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
+- You can find the `if`{:class='microbitlogic'} block and the `>`{:class='microbitlogic'} block in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
 
 If the result of the comparison is True, then a sad face icon is shown. If it is False, then a smiley face icon is shown.
 - You can find `show icon`{:class='microbitbasic'} blocks in the `Basic`{:class='microbitbasic'} menu in your Toolbox.
