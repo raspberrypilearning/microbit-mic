@@ -4,8 +4,15 @@ The micro:bit V2 has a microphone input to sense sound levels.
 
 You can use the value of `sound level`{:class='microbitinput'} in a comparison block to trigger an action.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iwxY77TVqLhP
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    if (input.soundLevel() > 200) {
+        basic.showIcon(IconNames.Sad)
+    } else {
+        basic.showIcon(IconNames.Happy)
+    }
+})
+```
 
 In this code:
 
@@ -29,8 +36,14 @@ Slide the microphone level up to 200 to trigger the LEDs to change.
 
 In the Sound meter project, you learned how to plot a bar graph of the sound level.
 
-<div style="position:relative;height:calc(100px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_6ksXpsPViAWd
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+})
+```
 
 In this code:
 
