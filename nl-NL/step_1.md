@@ -1,8 +1,8 @@
-The micro:bit V2 has a microphone input to sense sound levels.
+De micro:bit V2 heeft een microfoon om geluidsniveaus te detecteren.
 
-## Use the sound level to trigger an action
+## Gebruik de microfoon om een actie te activeren
 
-You can use the value of `sound level`{:class='microbitinput'} in a comparison block to trigger an action.
+Je kunt de waarde van `geluidsniveau`{:class='microbitinput'} gebruiken in een vergelijkingsblok om een actie te starten.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -14,28 +14,28 @@ loops.everyInterval(500, function () {
 })
 ```
 
-In this code:
+In deze code:
 
-A loop is called every half second (500 ms).
+Wordt elke halve seconde (500 ms) een lus aangeroepen.
 
-- You can find the `every`{:class='microbitloops'} block in the `Loops`{:class='microbitloops'} menu in your Toolbox.
+- Je kunt het blok `elk`{:class='microbitloops'} vinden in het `Lussen`{:class='microbitloops'} menu in je Toolbox.
 
-There is a comparison to check if the `sound level`{:class='microbitinput'} has a value of more than 200.
+Er is een vergelijking om te controleren of het `geluidsniveau`{:class='microbitinput'} een waarde van meer dan 200 heeft.
 
-- You can find the `if`{:class='microbitlogic'} block and the `>`{:class='microbitlogic'} block in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
-- You can find the `sound level`{:class='microbitinput'} block in the `Input`{:class='microbitinput'} menu in your Toolbox.
+- Je kunt het blok `als`{:class='microbitlogic'} en het `>`{:class='microbitlogic'} blok in het `Logisch`{:class='microbitlogic'} menu vinden in je Toolbox.
+- Je kunt het blok `geluidsniveau`{:class='microbitinput'} vinden in het `Invoer`{:class='microbitinput'} menu in je Toolbox.
 
-If the result of the comparison is True, then a sad face icon is shown. If it is False, then a smiley face icon is shown.
+Als het resultaat van de vergelijking waar is, dan wordt er een pictogram van een verdrietig gezicht getoond. Als het onwaar is, dan wordt een smiley getoond.
 
-- You can find `show icon`{:class='microbitbasic'} blocks in the `Basic`{:class='microbitbasic'} menu in your Toolbox.
+- Je kunt `toon pictogram`{:class='microbitbasic'} blokken vinden in het `Basis`{:class='microbitbasic'} menu in je Toolbox.
 
-Slide the microphone level up to 200 on the simulator to trigger the LEDs to change.
+Schuif het niveau van de microfoon tot 200 op de simulator om de LED's te laten veranderen.
 
 <div style="position:relative;height:0;padding-bottom:127%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:60%;height:100%;" src="https://makecode.microbit.org/---run?id=_Ccg0vpbm2PdF" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
-## Display the sound level
+## Geef het geluidsniveau weer
 
-In the Sound meter project, you learnt how to plot a bar graph of the sound level.
+In het project Geluidsmeter heb je geleerd hoe je een staafdiagram van het geluidsniveau kunt tekenen.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -46,13 +46,13 @@ loops.everyInterval(500, function () {
 })
 ```
 
-In this code:
+In deze code:
 
-A loop is called every half second (500 ms).
+Wordt elke halve seconde (500ms) een lus aangeroepen.
 
-- You can find the `every`{:class='microbitloops'} block in the `Loops`{:class='microbitloops'} menu in your Toolbox.
+- Je kunt het blok `elk`{:class='microbitloops'} vinden in het `Lussen`{:class='microbitloops'} menu in je Toolbox.
 
-The value of `sound level`{:class='microbitinput'} is used as the value to display on the LEDs.
+De waarde van `geluidsniveau`{:class='microbitinput'} wordt gebruikt als de waarde die op de LED's moet worden weergegeven.
 
-- You can find the `sound level`{:class='microbitinput'} block in the `Input`{:class='microbitinput'} menu in your Toolbox.
-- You can find the `plot bar graph`{:class='microbitled'} block in the `Led`{:class='microbitled'} menu in your Toolbox.
+- Je kunt het blok `geluidsniveau`{:class='microbitinput'} vinden in het `Invoer`{:class='microbitinput'} menu in je Toolbox.
+- Je kunt het blok `plot bar graph`{:class='microbitled'} vinden in het menu `Lichtjes`{:class='microbitled'} in je Toolbox.
