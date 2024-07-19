@@ -54,5 +54,5 @@ loops.everyInterval(500, function () {
 
 Η τιμή του `sound level`{:class='microbitinput'} χρησιμοποιείται ως η τιμή που εμφανίζεται στα LED.
 
-- Μπορείς να βρεις το μπλοκ `sound level`{:class='microbitinput'} στο μενού 'Είσοδος\`{:class='microbitinput'} στην Εργαλειοθήκη σου.
+- Μπορείς να βρεις το μπλοκ `sound level`{:class='microbitinput'} στο μενού `Είσοδος`{:class='microbitinput'} στην Εργαλειοθήκη σου.
 - Μπορείς να βρεις το μπλοκ `plot bar graph`{:class='microbitled'} στο μενού `Led`{:class='microbitled'} στην Εργαλειοθήκη σου.
