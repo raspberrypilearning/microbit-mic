@@ -1,8 +1,8 @@
-The micro:bit V2 has a microphone input to sense sound levels.
+Le micro:bit V2 dispose d'une entrée microphone pour détecter les niveaux sonores.
 
-## Use the sound level to trigger an action
+## Utiliser le niveau sonore pour déclencher une action
 
-You can use the value of `sound level`{:class='microbitinput'} in a comparison block to trigger an action.
+Tu peux utiliser la valeur de `niveau sonore`{:class='microbitinput'} dans un bloc de comparaison pour déclencher une action.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -14,28 +14,28 @@ loops.everyInterval(500, function () {
 })
 ```
 
-In this code:
+Dans ce code :
 
-A loop is called every half second (500 ms).
+Une boucle est appelée toutes les demi-secondes (500 ms).
 
-- You can find the `every`{:class='microbitloops'} block in the `Loops`{:class='microbitloops'} menu in your Toolbox.
+- Tu peux trouver le bloc `chaque`{:class='microbitloops'} dans le menu `Boucles`{:class='microbitloops'} dans ta boîte à outils.
 
-There is a comparison to check if the `sound level`{:class='microbitinput'} has a value of more than 200.
+Il existe une comparaison pour vérifier si le `niveau sonore`{:class='microbitinput'} a une valeur supérieure à 200.
 
-- You can find the `if`{:class='microbitlogic'} block and the `>`{:class='microbitlogic'} block in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
-- You can find the `sound level`{:class='microbitinput'} block in the `Input`{:class='microbitinput'} menu in your Toolbox.
+- Tu peux trouver le bloc `si`{:class='microbitlogic'} et le bloc `>`{:class='microbitlogic'} dans le menu `Logique`{:class='microbitlogic'} dans ta boîte à outils.
+- Tu peux trouver le bloc `niveau sonore`{:class='microbitinput'} dans le menu `Entrée`{:class='microbitinput'} dans ta boîte à outils.
 
-If the result of the comparison is True, then a sad face icon is shown. If it is False, then a smiley face icon is shown.
+Si le résultat de la comparaison est vrai, alors une icône de visage triste est affichée. Si c'est faux, une icône de visage souriant s'affiche.
 
-- You can find `show icon`{:class='microbitbasic'} blocks in the `Basic`{:class='microbitbasic'} menu in your Toolbox.
+- Tu peux trouver les blocs `montrer l'icône`{:class='microbitbasic'} dans le menu `Base`{:class='microbitbasic'} dans ta boîte à outils.
 
-Slide the microphone level up to 200 on the simulator to trigger the LEDs to change.
+Fais glisser le niveau du microphone jusqu'à 200 sur le simulateur pour déclencher le changement des LED.
 
 <div style="position:relative;height:0;padding-bottom:127%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:60%;height:100%;" src="https://makecode.microbit.org/---run?id=_Ccg0vpbm2PdF" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
-## Display the sound level
+## Afficher le niveau sonore
 
-In the Sound meter project, you learnt how to plot a bar graph of the sound level.
+Dans le projet Sonomètre, tu as appris à tracer un graphique à barres du niveau sonore.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -46,13 +46,13 @@ loops.everyInterval(500, function () {
 })
 ```
 
-In this code:
+Dans ce code :
 
-A loop is called every half second (500 ms).
+Une boucle est appelée toutes les demi-secondes (500 ms).
 
-- You can find the `every`{:class='microbitloops'} block in the `Loops`{:class='microbitloops'} menu in your Toolbox.
+- Tu peux trouver le bloc `chaque`{:class='microbitloops'} dans le menu `Boucles`{:class='microbitloops'} dans ta boîte à outils.
 
-The value of `sound level`{:class='microbitinput'} is used as the value to display on the LEDs.
+La valeur de `niveau sonore`{:class='microbitinput'} est utilisée comme valeur à afficher sur les LED.
 
-- You can find the `sound level`{:class='microbitinput'} block in the `Input`{:class='microbitinput'} menu in your Toolbox.
-- You can find the `plot bar graph`{:class='microbitled'} block in the `Led`{:class='microbitled'} menu in your Toolbox.
+- Tu peux trouver le bloc `niveau sonore`{:class='microbitinput'} dans le menu `Entrée`{:class='microbitinput'} dans ta boîte à outils.
+- Tu peux trouver le bloc `tracer graphique en barres`{:class='microbitled'} dans le menu `LED`{:class='microbitled'} dans ta boîte à outils.
