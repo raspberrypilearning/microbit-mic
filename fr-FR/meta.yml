@@ -1,0 +1,10 @@
+---
+title: Détecter du son
+hero_image: images/banner.png
+description: Utilise le microphone pour déclencher une action
+version: 4
+listed: false
+copyedit: false
+last_tested: "2023-09-22"
+steps:
+  - title: Introduction
